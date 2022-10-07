@@ -2,11 +2,10 @@
   "name": "bullmq-dashboard-runnable",
   "version": "0.0.1",
   "description": "Run bullmq-dashboard with one command",
-  "bin": "dist/index.js",
+  "bin": "index.js",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "build": "ncc build index.js -o dist"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
