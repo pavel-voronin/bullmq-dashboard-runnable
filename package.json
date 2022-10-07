@@ -8,7 +8,7 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pavel Voronin",
   "license": "ISC",
   "dependencies": {
     "@bull-board/express": "^4.4.0",
