@@ -1,6 +1,6 @@
 {
   "name": "bullmq-dashboard-runnable",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Run bullmq-dashboard with one command",
   "bin": "index.js",
   "main": "index.js",
@@ -15,5 +15,6 @@
     "bullmq": "^2.1.3",
     "commander": "^9.4.1",
     "express": "^4.18.1"
-  }
+  },
+  "repository": "github:pavel-voronin/bullmq-dashboard-runnable"
 }
