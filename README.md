@@ -17,6 +17,10 @@ Options:
   -h, --help           display help for command
 ```
 
+## Run with Docker
+
+`docker run -p3000:3000 bullmq-dashboard-runnable --redis-host="host.docker.internal" queueNames`
+
 ## If you need something
 
 Feel free to share your ideas and needs in Discussions and Issues
