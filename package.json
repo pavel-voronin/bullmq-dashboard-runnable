@@ -1,7 +1,7 @@
 {
   "name": "bullmq-dashboard-runnable",
-  "version": "0.0.3",
-  "description": "Run bullmq-dashboard with one command",
+  "version": "0.0.4",
+  "description": "Run bull-board with one command",
   "bin": "index.js",
   "main": "index.js",
   "scripts": {
