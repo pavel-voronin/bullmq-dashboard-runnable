@@ -8,18 +8,19 @@ Run [bull-board](https://github.com/felixmosh/bull-board) — dashboard for Bull
 Usage: npx bullmq-dashboard-runnable [options] <names>
 
 Arguments:
-  names                comma separated queue names
+  names                        comma separated queue names
 
 Options:
-  -P, --port <port>    Port to run UI (default: 3000)
-  --redis-port <port>  Redis port (default: 6379)
-  --redis-host <host>  Redis host (default: "localhost")
-  -h, --help           display help for command
+  -P, --port <port>            Port to run UI (default: 3000)
+  --redis-port <port>          Redis port (default: 6379)
+  --redis-host <host>          Redis host (default: "localhost")
+  --redis-password <password>  Redis password
+  -h, --help                   display help for command
 ```
 
 ## Run with Docker
 
-`docker run -p3000:3000 bullmq-dashboard-runnable --redis-host="host.docker.internal" queueNames`
+`docker run -p3000:3000 pvoronin/bullmq-dashboard-runnable --redis-host="host.docker.internal" queueNames`
 
 ## If you need something
 
