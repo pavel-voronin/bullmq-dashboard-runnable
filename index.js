@@ -23,11 +23,13 @@ program
   .option("-P, --port <port>", "Port to run UI", myParseInt, 3000)
   .option("--redis-port <port>", "Redis port", myParseInt, 6379)
   .option("--redis-host <host>", "Redis host", "localhost")
+  .option("--redis-password <password>", "Redis password", undefined)
   .argument("<names>", "comma separated queue names", split)
   .action((names, opts) => {
     const redisOptions = {
       port: opts.redisPort,
       host: opts.redisHost,
+      password: opts.redisPassword,
     };
 
     const run = async () => {
