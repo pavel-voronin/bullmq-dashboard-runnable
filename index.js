@@ -24,6 +24,7 @@ program
   .option("--redis-port <port>", "Redis port", myParseInt, 6379)
   .option("--redis-host <host>", "Redis host", "localhost")
   .option("--redis-password <password>", "Redis password", undefined)
+  .option("--prefix <prefix>", "BullMQ prefix", undefined)
   .argument("<names>", "comma separated queue names", split)
   .action((names, opts) => {
     const redisOptions = {
@@ -35,7 +36,7 @@ program
     const run = async () => {
       const queues = names.map(
         (name) =>
-          new BullMQAdapter(new Queue(name, { connection: redisOptions }))
+          new BullMQAdapter(new Queue(name, { ...(opts.prefix ? {prefix: opts.prefix}: {}),  connection: redisOptions }))
       );
 
       const app = express();

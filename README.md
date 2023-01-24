@@ -15,6 +15,7 @@ Options:
   --redis-port <port>          Redis port (default: 6379)
   --redis-host <host>          Redis host (default: "localhost")
   --redis-password <password>  Redis password
+  --prefix <prefix>            BullMQ prefix (default: none)
   -h, --help                   display help for command
 ```
 
